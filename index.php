@@ -16,7 +16,7 @@ try
         $mail->SMTPAuth   = true;
 
         $mail->Username   = 'testesatc2@gmail.com';
-        $mail->Password   = 'ofduunytailniugx';
+        $mail->Password   = 'bcnnwgzyivxqcpic';
 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
@@ -36,7 +36,8 @@ try
             <h1>Banca criada com sucesso</h1>
             <p>Sua banca foi cadastrada.</p>
         ';
-
+        $mail->SMTPDebug = 2;
+        $mail->Debugoutput = 'html';
         $mail->send();
 
         echo "Email enviado com sucesso";
